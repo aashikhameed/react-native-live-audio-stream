@@ -35,7 +35,7 @@ Add the following line to ```android/app/src/main/AndroidManifest.xml```
 import LiveAudioStream from 'react-native-live-audio-stream';
 
 const options = {
-  sampleRate: 32000,  // default is 44100 but 32000 is adequate for accurate voice recognition
+  sampleRate: 16000,  // 16000 for real time transcribe using assembly ai. default is 44100 but 32000 is adequate for accurate voice recognition
   channels: 1,        // 1 or 2, default 1
   bitsPerSample: 16,  // 8 or 16, default 16
   audioSource: 6,     // android only (see below)
